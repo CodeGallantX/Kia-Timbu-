@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import FeaturedList from '../components/FeaturedList';
+import Footer from '@/components/Footer';
 
 const HomePage = () => {
   return (
@@ -10,6 +11,7 @@ const HomePage = () => {
       <Navbar />
       <HeroSection />
       <FeaturedList />
+      <Footer/>
     </div>
   );
 };

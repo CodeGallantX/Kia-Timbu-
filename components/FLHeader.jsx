@@ -35,6 +35,7 @@ const pageStyles = {
     justifyContent: 'space-between',
     alignItems: 'center',
     height: '40px', // Adjusted padding to avoid overflow
+    padding: 'auto 500px'
   },
   itemsFound: {
     fontFamily: 'Montserrat',

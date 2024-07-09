@@ -480,8 +480,12 @@ const ProductCard = () => {
 
 // Styles
 const styles = {
-    cardGrid: {
-        display: 'grid',
+   cardGrid: {
+    marginTop: '30px',
+    display: 'grid',
+    gridTemplateColumns: 'repeat(3, 1fr)', // 3 columns with equal width
+    gridGap: '20px', // equal gaps between grid items
+    position: 'relative',
     },
   cardContainer: {
     maxWidth: '360px',
@@ -491,9 +495,12 @@ const styles = {
     background: '#fffffeff',
   },
   image: {
-    width: '100%',
+    height: '250px',
+    objectFit: 'cover',
     borderRadius: '4px',
     marginBottom: '16px',
+    width: '300px',
+    objectFit: 'cover',
   },
   infoSection: {
     display: 'flex',
@@ -577,6 +584,7 @@ const styles = {
     borderRadius: '4px',
     border: '0.5px solid #0a0a0a',
     cursor: 'pointer',
+    
   },
   addToCartText: {
     fontFamily: 'Montserrat',
@@ -611,5 +619,6 @@ const styles = {
     color: '#555555',
   },
 };
+
 
 export default ProductCard;

@@ -21,7 +21,7 @@ const FeaturedList = () => {
 
 const styles = {
   mainContainer: {
-    padding: '25px 75px',  // Fixed padding value
+    padding: '25px 105px',  // Fixed padding value
   },
   featuredListContainer: {
     textAlign: 'center',
