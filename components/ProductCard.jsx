@@ -1,6 +1,9 @@
 "use client";
 import React from 'react';
 import '../styles/globals.css';
+import HeartIconButton from './HeartIconButton';
+import AvailableColors from './AvailableColors.jsx';
+
 
 // Define the icon for the Add to Cart button
 const CartPlusIcon = () => (
@@ -12,52 +15,16 @@ const CartPlusIcon = () => (
 );
 
 
-// Define the color icons
-const greyColor = () => (
-    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="14" height="14" rx="7" fill="#E0DFFE"/>
-    </svg>
-)
-
-const purpleColor = () => (
-    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="14" height="14" rx="7" fill="#5754BA"/>
-    </svg>
-)
-
-const orangeColor = () => (
-    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="14" height="14" rx="7" fill="#DEAE55"/>
-    </svg>
-)
-
-const blueColor = () => (
-    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="14" height="14" rx="7" fill="#007ECE"/>
-    </svg>
-)
-
-const blackColor = () => (
-    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="14" height="14" rx="7" fill="#1F130A"/>
-    </svg>
-)
-
-const redColor = () => (
-    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="14" height="14" rx="7" fill="#471A1A"/>
-    </svg>
-
-)
-
-
 // Define the ProductCard Component
 const ProductCard = () => {
   return (
     <section style={styles.cardGrid}>
         <div style={styles.cardContainer}>
         {/* Section Image */}
+        <div style={styles.imageContainer}>
         <img src="https://ik.imagekit.io/mshcgnjju/CHEF%20-%20Timbu%20Cloud%20Store/stainless-steel-pots-pans-isolated-white.jpg?updatedAt=1720283849632" alt="Set Image" style={styles.image} />
+            <HeartIconButton />
+        </div>
 
         {/* Info Section */}
         <div style={styles.infoSection}>
@@ -77,23 +44,7 @@ const ProductCard = () => {
             </div>
 
             {/* Available Colors */}
-            <div style={styles.availableColors}>
-            <div style={styles.availableColorsTitle}>
-                Available colors
-            </div>
-            <div style={styles.colorOptions}>
-                <div style={styles.colorOption}>
-                <greyColor/>
-                </div>
-                <div style={styles.colorOptionx}>
-                <purpleColor/>
-                </div>
-                <div style={styles.colorOptionx}>
-                <orangeColor/>
-                </div>
-                </div>
-                </div>
-
+            <AvailableColors/>
                 {/* Button and Sizes */}
                 <div style={styles.buttonSizes}>
                     {/* Sizes in set */}
@@ -127,7 +78,10 @@ const ProductCard = () => {
 
         <div style={styles.cardContainer}>
         {/* Section Image */}
+        <div style={styles.imageContainer}>
         <img src="https://ik.imagekit.io/mshcgnjju/CHEF%20-%20Timbu%20Cloud%20Store/bluepan.jpg?updatedAt=1720304132952" alt="Set Image" style={styles.image} />
+            <HeartIconButton />
+        </div>
 
         {/* Info Section */}
         <div style={styles.infoSection}>
@@ -147,23 +101,7 @@ const ProductCard = () => {
             </div>
 
             {/* Available Colors */}
-            <div style={styles.availableColors}>
-            <div style={styles.availableColorsTitle}>
-                Available colors
-            </div>
-            <div style={styles.colorOptions}>
-                <div style={styles.colorOption}>
-                <greyColor/>
-                </div>
-                <div style={styles.colorOptionx}>
-                <purpleColor/>
-                </div>
-                <div style={styles.colorOptionx}>
-                <orangeColor/>
-                </div>
-                </div>
-                </div>
-
+            <AvailableColors/>
                 {/* Button and Sizes */}
                 <div style={styles.buttonSizes}>
                     {/* Sizes in set */}
@@ -197,7 +135,11 @@ const ProductCard = () => {
 
         <div style={styles.cardContainer}>
         {/* Section Image */}
+
+        <div style={styles.imageContainer}>
         <img src="https://ik.imagekit.io/mshcgnjju/CHEF%20-%20Timbu%20Cloud%20Store/transparent_jug.jpg?updatedAt=1720304094125" alt="Set Image" style={styles.image} />
+            <HeartIconButton />
+        </div>
 
         {/* Info Section */}
         <div style={styles.infoSection}>
@@ -217,22 +159,7 @@ const ProductCard = () => {
             </div>
 
             {/* Available Colors */}
-            <div style={styles.availableColors}>
-            <div style={styles.availableColorsTitle}>
-                Available colors
-            </div>
-            <div style={styles.colorOptions}>
-                <div style={styles.colorOption}>
-                <greyColor/>
-                </div>
-                <div style={styles.colorOptionx}>
-                <purpleColor/>
-                </div>
-                <div style={styles.colorOptionx}>
-                <orangeColor/>
-                </div>
-                </div>
-                </div>
+            <AvailableColors/>
 
                 {/* Button and Sizes */}
                 <div style={styles.buttonSizes}>
@@ -267,7 +194,10 @@ const ProductCard = () => {
 
         <div style={styles.cardContainer}>
         {/* Section Image */}
+        <div style={styles.imageContainer}>
         <img src="https://ik.imagekit.io/mshcgnjju/CHEF%20-%20Timbu%20Cloud%20Store/redpots.jpg?updatedAt=1720304148887" alt="Set Image" style={styles.image} />
+            <HeartIconButton />
+        </div>
 
         {/* Info Section */}
         <div style={styles.infoSection}>
@@ -287,24 +217,10 @@ const ProductCard = () => {
             </div>
 
             {/* Available Colors */}
-            <div style={styles.availableColors}>
-            <div style={styles.availableColorsTitle}>
-                Available colors
-            </div>
-            <div style={styles.colorOptions}>
-                <div style={styles.colorOption}>
-                <greyColor/>
-                </div>
-                <div style={styles.colorOptionx}>
-                <purpleColor/>
-                </div>
-                <div style={styles.colorOptionx}>
-                <orangeColor/>
-                </div>
-                </div>
-                </div>
+            <AvailableColors/>
 
                 {/* Button and Sizes */}
+                
                 <div style={styles.buttonSizes}>
                     {/* Sizes in set */}
                     <div style={styles.sizesInSet}>
@@ -337,7 +253,11 @@ const ProductCard = () => {
 
         <div style={styles.cardContainer}>
         {/* Section Image */}
-        <img src="https://ik.imagekit.io/mshcgnjju/CHEF%20-%20Timbu%20Cloud%20Store/copper_pan.jpg?updatedAt=1720304110112" alt="Set Image" style={styles.image} />
+        <div style={styles.imageContainer}>
+            <img src="https://ik.imagekit.io/mshcgnjju/CHEF%20-%20Timbu%20Cloud%20Store/copper_pan.jpg?updatedAt=1720304110112" alt="Set Image" style={styles.image} />
+            <HeartIconButton />
+        </div>
+        
 
         {/* Info Section */}
         <div style={styles.infoSection}>
@@ -357,22 +277,7 @@ const ProductCard = () => {
             </div>
 
             {/* Available Colors */}
-            <div style={styles.availableColors}>
-            <div style={styles.availableColorsTitle}>
-                Available colors
-            </div>
-            <div style={styles.colorOptions}>
-                <div style={styles.colorOption}>
-                <greyColor/>
-                </div>
-                <div style={styles.colorOptionx}>
-                <purpleColor/>
-                </div>
-                <div style={styles.colorOptionx}>
-                <orangeColor/>
-                </div>
-                </div>
-                </div>
+            <AvailableColors/>
 
                 {/* Button and Sizes */}
                 <div style={styles.buttonSizes}>
@@ -407,7 +312,11 @@ const ProductCard = () => {
 
         <div style={styles.cardContainer}>
         {/* Section Image */}
-        <img src="https://ik.imagekit.io/mshcgnjju/CHEF%20-%20Timbu%20Cloud%20Store/whitepot.jpg?updatedAt=1720304126521" alt="Set Image" style={styles.image} />
+        <div style={styles.imageContainer}>
+            <img src="https://ik.imagekit.io/mshcgnjju/CHEF%20-%20Timbu%20Cloud%20Store/whitepot.jpg?updatedAt=1720304126521" alt="Set Image" style={styles.image} />
+            <HeartIconButton />
+        </div>
+        
 
         {/* Info Section */}
         <div style={styles.infoSection}>
@@ -427,22 +336,7 @@ const ProductCard = () => {
             </div>
 
             {/* Available Colors */}
-            <div style={styles.availableColors}>
-            <div style={styles.availableColorsTitle}>
-                Available colors
-            </div>
-            <div style={styles.colorOptions}>
-                <div style={styles.colorOption}>
-                <greyColor/>
-                </div>
-                <div style={styles.colorOptionx}>
-                <purpleColor/>
-                </div>
-                <div style={styles.colorOptionx}>
-                <orangeColor/>
-                </div>
-                </div>
-                </div>
+            <AvailableColors/>
 
                 {/* Button and Sizes */}
                 <div style={styles.buttonSizes}>
@@ -494,8 +388,16 @@ const styles = {
     padding: '16px 24px',
     background: '#fffffeff',
   },
+  imageContainer: {
+    position: 'relative',
+    width: '100%',
+    height: '368px',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
   image: {
-    height: '250px',
+    height: '280px',
     objectFit: 'cover',
     borderRadius: '4px',
     marginBottom: '16px',

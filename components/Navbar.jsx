@@ -3,7 +3,6 @@ import React from "react";
 import Image from "next/image";
 import Link from 'next/link';
 import CartPage from '../pages/cart';
-import inLineStyles from './Navbar.module.css';
 
 
 
