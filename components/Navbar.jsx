@@ -9,9 +9,9 @@ import Link from 'next/link';
 // const Icon = () => ();
 
 const NavLink = ({ href, children }) => (
-  <a href={href} style={inLineinLineStyles.navLink}>
+  <Link href={href} style={inLineinLineStyles.navLink}>
     {children}
-  </a>
+  </Link>
 );
 
 const Navbar = () => {

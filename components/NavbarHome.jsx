@@ -51,9 +51,9 @@ const Navbar = () => {
           </div>
         </div>
         <div style={inLineinLineStyles.navLinksContainer}>
-          <a href="#" style={{textDecoration: 'none', color: '#fffffe', borderBottom: '2px solid white', paddingBottom: '2px' }}>Cookware</a>
-          <a href="#" style={{textDecoration: 'none', color: '#fffffe'}}>Knives</a>
-          <a href="#" style={{textDecoration: 'none', color: '#fffffe'}}>Contact Us</a>
+          <Link href="#" style={{textDecoration: 'none', color: '#fffffe', borderBottom: '2px solid white', paddingBottom: '2px' }}>Cookware</Link>
+          <Link href="#" style={{textDecoration: 'none', color: '#fffffe'}}>Knives</Link>
+          <Link href="#" style={{textDecoration: 'none', color: '#fffffe'}}>Contact Us</Link>
         </div>
       </div>
     );
