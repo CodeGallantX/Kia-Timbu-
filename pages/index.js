@@ -10,14 +10,7 @@ import Footer from '@/components/Footer';
 const HomePage = () => {
   return (
     <div>
-      <Head>
-        <meta charSet='utf-8' />
-        <meta httpEquiv='X-UA-Compatible' content='IE=edge' />
         <title>CHEF - Timbu Store</title>
-        <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <link rel='icon' href='https://ik.imagekit.io/mshcgnjju/CHEF%20-%20Timbu%20Cloud%20Store/logo.png'/>
-        <link rel='stylesheet' type='text/css' media='screen' href='../styles/globals.css' />
-      </Head>
       <Navbar />
       <HeroSection />
       <FeaturedList />

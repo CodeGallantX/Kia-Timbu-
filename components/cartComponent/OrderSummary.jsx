@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import SummaryItem from './SummaryItem'
+import Link from "next/link";
 
 // Define OrderSummary Component
 const OrderSummary = ({ subtotal, shipping, total }) => (
@@ -49,7 +50,7 @@ const OrderSummary = ({ subtotal, shipping, total }) => (
         }}>Apply</button>
       </div>
       {/* Cart Button */}
-      <a href="/checkout" style={{textDecoration: 'none', color: '#fffffeff'}}>
+      <Link href="/checkout" style={{textDecoration: 'none', color: '#fffffeff'}}>
       <button style={{
         width: '100%',
         padding: '17px 0',
@@ -65,7 +66,7 @@ const OrderSummary = ({ subtotal, shipping, total }) => (
       }}>
         Cart
       </button>
-      </a>
+      </Link>
     </div>
   );
   

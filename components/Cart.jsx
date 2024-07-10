@@ -3,7 +3,7 @@ import React from 'react';
 import CartItem from './cartComponent/CartItem';
 import OrderSummary from './cartComponent/OrderSummary';
 
-import Link from 'next/link'
+import Link from 'next/link';
 
 // Define the CartIcon Component
 const CartIcon = () => (
