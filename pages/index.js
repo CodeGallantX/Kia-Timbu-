@@ -10,6 +10,7 @@ const HomePage = () => {
   return (
     <div>
       <title>CHEF - Timbu Store</title>
+      <link rel='icon' src="https://ik.imagekit.io/mshcgnjju/CHEF%20-%20Timbu%20Cloud%20Store/logo.png"/>
       <Navbar />
       <HeroSection />
       <FeaturedList />
