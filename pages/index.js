@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import FeaturedList from '../components/FeaturedList';
 import Footer from '@/components/Footer';
-import Link from 'next/link';
+// import Link from 'next/link';// 
 
 const HomePage = () => {
   return (

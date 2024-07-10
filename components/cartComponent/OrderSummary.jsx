@@ -60,8 +60,12 @@ const OrderSummary = ({ subtotal, shipping, total }) => (
         lineHeight: '30px',
         borderRadius: '4px',
         cursor: 'pointer',
-        border: 'none'
-      }}>Cart</button>
+        border: 'none',
+      }}>
+        Cart
+      </button>
     </div>
   );
   
+
+export default OrderSummary;

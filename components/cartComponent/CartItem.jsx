@@ -30,13 +30,13 @@ const CartIcon = () => (
 // Define CartItem Component
 const CartItem = ({ imgSrc, title, price, colors }) => (
     <div style={{ display: 'flex', gap: '10px', padding: '24px 16px', border: '0.5px solid #e0dffeff', borderRadius: '4px', backgroundColor: '#ffffff' }}>
-      <img src={imgSrc} alt="Product Image" style={{ width: '104px', height: '104px', borderRadius: '4px' }} />
+      <img src={imgSrc} alt="Product Image" style={{ width: '200px', height: '150px', borderRadius: '4px' }} />
       <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '12px' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          <div style={{ fontFamily: 'Georgia', fontWeight: '700', fontSize: '18px', color: '#111111' }}>{title}</div>
+          <div style={{ fontFamily: 'Lora', fontWeight: '700', fontSize: '18px', color: '#111111' }}>{title}</div>
           <div style={{ fontFamily: 'Montserrat', fontWeight: '700', fontSize: '18px', color: '#111111' }}>{price}</div>
         </div>
-        <div style={{ fontFamily: 'Montserrat', fontWeight: '500', fontSize: '16px', color: '#111111' }}>Available colors</div>
+        <div style={{ fontFamily: 'Montserrat', fontWeight: '500', fontSize: '16px', color: '#111111', }}>Available colors</div>
         <div style={{ display: 'flex', gap: '8px' }}>
           {colors.map((color, index) => (
             <div key={index} style={{ width: '16px', height: '16px', borderRadius: '50%', background: color }}></div>
@@ -57,3 +57,4 @@ const CartItem = ({ imgSrc, title, price, colors }) => (
     </div>
   );
   
+export default CartItem;
