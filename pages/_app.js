@@ -6,7 +6,6 @@ import '../styles/globals.css';
 function MyApp({ Component, pageProps }) {
   return (
     <>
-//      <ResponsiveNavbar />
       <Component {...pageProps} />
     </>
   );
