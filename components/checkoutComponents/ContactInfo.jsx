@@ -3,26 +3,28 @@ import React from 'react';
 const ContactInfo = () => {
   return (
     <div style={styles.container}>
+      <h1>Checkout</h1>
+      <h2 style={{fontFamily: 'Lora, serif', fontSize: '24px' }}>1. Delivery Details</h2>
       <h2 style={styles.header}>Contact information</h2>
       <div style={styles.contactCenter}>
         <div style={styles.nameSection}>
           <div style={styles.inputGroup}>
+          <label style={styles.label}>First Name</label>
             <input style={styles.input} value="Ore" readOnly />
-            <label style={styles.label}>First Name</label>
           </div>
           <div style={styles.inputGroup}>
+          <label style={styles.label}>Last Name</label>
             <input style={styles.input} value="Godson" readOnly />
-            <label style={styles.label}>Last Name</label>
           </div>
         </div>
         <div style={styles.contactSection}>
           <div style={styles.inputGroup}>
+          <label style={styles.label}>Email address</label>
             <input style={styles.input} value="Ore@gmail.com" readOnly />
-            <label style={styles.label}>Email address</label>
           </div>
           <div style={styles.inputGroup}>
+          <label style={styles.label}>Phone Number</label>
             <input style={styles.input} value="+23468000" readOnly />
-            <label style={styles.label}>Phone Number</label>
           </div>
         </div>
       </div>
@@ -36,6 +38,14 @@ const styles = {
     flexDirection: 'column',
     gap: '8px',
     width: '100%',
+    marginBottom: '40px',
+    paddingLeft: '4rem',
+    paddingRight: '4rem',
+    marginTop: 0,
+  },
+  h1: {
+    marginBottom: '60px',
+    fontSize: '36px',
   },
   header: {
     fontFamily: 'Montserrat',

@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import Header from '@/components/checkoutComponents/Header';
 import ContactInfo from '@/components/checkoutComponents/ContactInfo';
 import ShippingDetails from '@/components/checkoutComponents/ShippingDetails';
-import ShippingMethod from '@components/checkoutComponents/ShippingMethod';
+import SaveCheckbox from '@/components/checkoutComponents/SaveCheckbox';
+import ShippingMethod from '@/components/checkoutComponents/ShippingMethod';
 import PurchaseInfo from '@/components/checkoutComponents/PurchaseInfo';
 import RegistrationCheckbox from '@/components/checkoutComponents/RegistrationCheckbox';
 import Payment from '@/components/checkoutComponents/Payment';
@@ -21,7 +22,21 @@ function Checkout() {
   return (
     <div>
       <Header />
-      <ShippingMethod selectedOption={selectedOption} handleOptionChange={handleOptionChange} />
+      <div style={{display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: '10rem', padding: '2rem 5rem 2rem 1rem', }}>
+        <div>
+          <ContactInfo/>
+          <ShippingDetails/>
+          <SaveCheckbox/>
+          <ShippingMethod selectedOption={selectedOption} handleOptionChange={handleOptionChange} />
+          <RegistrationCheckbox/>
+          <Payment/>
+          <PaymentButton/>
+        </div>
+        <div> 
+          <PurchaseInfo />
+        </div>
+      </div>
+      <Footer/>
     </div>
   );
 }

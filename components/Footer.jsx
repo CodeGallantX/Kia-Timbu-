@@ -5,7 +5,9 @@ const Footer = () => {
   return (
     <div style={styles.footerContainer}>
       <div style={styles.footerLinksContainer}>
-        <img src="https://ik.imagekit.io/mshcgnjju/CHEF%20-%20Timbu%20Cloud%20Store/logo.png" alt="logo" style={styles.logo} />
+        <a href="/">
+          <img src="https://ik.imagekit.io/mshcgnjju/CHEF%20-%20Timbu%20Cloud%20Store/logo.png" alt="logo" style={styles.logo} />
+        </a>
         <div style={styles.navLinks}>
           <div style={styles.navLink}>
             <span style={styles.navLinkText}>Cookware</span>

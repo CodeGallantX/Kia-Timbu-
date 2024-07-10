@@ -8,12 +8,6 @@ import Link from 'next/link';
 
 // const Icon = () => ();
 
-const NavLink = ({ href, children }) => (
-  <a href={href} style={inLineinLineStyles.navLink}>
-    {children}
-  </a>
-);
-
 const Navbar = () => {
     return (
       <div style={inLineinLineStyles.navbarContainer}>
@@ -57,9 +51,9 @@ const Navbar = () => {
           </div>
         </div>
         <div style={inLineinLineStyles.navLinksContainer}>
-          <NavLink href="#"><a style={{textDecoration: 'none', color: '#fffffe', borderBottom: '2px solid white', paddingBottom: '2px' }}>Cookware</a></NavLink>
-          <NavLink href="#">Knives</NavLink>
-          <NavLink href="#">Contact us</NavLink>
+          <a href="#" style={{textDecoration: 'none', color: '#fffffe', borderBottom: '2px solid white', paddingBottom: '2px' }}>Cookware</a>
+          <a href="#" style={{textDecoration: 'none', color: '#fffffe'}}>Knives</a>
+          <a href="#" style={{textDecoration: 'none', color: '#fffffe'}}>Contact Us</a>
         </div>
       </div>
     );

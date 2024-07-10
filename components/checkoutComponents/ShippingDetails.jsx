@@ -1,5 +1,7 @@
 import React from 'react';
 
+
+
 const ShippingDetails = () => {
   return (
     <div style={styles.container}>
@@ -9,13 +11,13 @@ const ShippingDetails = () => {
           <div style={styles.inputGroup}>
             <div style={styles.inputWithIcon}>
               <span style={styles.icon}></span>
+            <label style={styles.label}>Country</label>
               <input style={styles.input} value="Nigeria" readOnly />
             </div>
-            <label style={styles.label}>Country</label>
           </div>
           <div style={styles.inputGroup}>
+          <label style={styles.label}>City</label>
             <input style={styles.input} value="Nigeria" readOnly />
-            <label style={styles.label}>City</label>
           </div>
         </div>
         
@@ -23,23 +25,23 @@ const ShippingDetails = () => {
           <div style={styles.inputGroup}>
             <div style={styles.inputWithIcon}>
               <span style={styles.icon}></span>
+            <label style={styles.label}>State/Province</label>
               <input style={styles.input} value="Lagos" readOnly />
             </div>
-            <label style={styles.label}>State/Province</label>
           </div>
           <div style={styles.inputGroup}>
+          <label style={styles.label}>Post Code</label>
             <input style={styles.input} value="004" readOnly />
-            <label style={styles.label}>Post Code</label>
           </div>
         </div>
         
         <div style={styles.inputGroup}>
+        <label style={styles.singleLabel}>Shipping Address 1</label>
           <input style={styles.singleInput} value="Ore Avenue" readOnly />
-          <label style={styles.singleLabel}>Shipping Address 1</label>
         </div>
         <div style={styles.inputGroup}>
+        <label style={styles.singleLabel}>Shipping Address 2 (optional)</label>
           <input style={styles.singleInput} value="" placeholder="Optional" />
-          <label style={styles.singleLabel}>Shipping Address 2 (optional)</label>
         </div>
       </div>
     </div>
@@ -52,6 +54,9 @@ const styles = {
     flexDirection: 'column',
     gap: '8px',
     width: '100%',
+    marginBottom: '40px',
+    paddingLeft: '4rem',
+    paddingRight: '4rem',
   },
   header: {
     fontFamily: 'Montserrat',
@@ -69,6 +74,7 @@ const styles = {
   row: {
     display: 'flex',
     flexDirection: 'row',
+    justifyContent: 'space-between',
     gap: '16px',
     width: '100%',
   },
@@ -81,6 +87,7 @@ const styles = {
   inputWithIcon: {
     display: 'flex',
     alignItems: 'center',
+    justifyContent: 'flex-start',
     position: 'relative',
   },
   icon: {
@@ -88,8 +95,11 @@ const styles = {
     right: '16px',
     width: '24px',
     height: '24px',
-    backgroundImage: 'url(./assets/solar-alt-arrow-down-linear.svg)', // Adjust the URL to the correct path of your icon
-    backgroundSize: 'cover',
+    top: '50%', // Center the icon vertically
+    transform: 'translateY(-50%)', // Adjust for vertical centering
+    backgroundImage: 'url(https://ik.imagekit.io/mshcgnjju/CHEF%20-%20Timbu%20Cloud%20Store/keyboard_arrow_down_24dp_5F6368_FILL0_wght400_GRAD0_opsz40.png?updatedAt=1720583148129)', // Adjust the URL to the correct path of your icon
+    backgroundSize: 'contain',
+
   },
   input: {
     height: '56px',

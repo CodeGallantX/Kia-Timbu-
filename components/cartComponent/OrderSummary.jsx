@@ -49,6 +49,7 @@ const OrderSummary = ({ subtotal, shipping, total }) => (
         }}>Apply</button>
       </div>
       {/* Cart Button */}
+      <a href="/checkout" style={{textDecoration: 'none', color: '#fffffeff'}}>
       <button style={{
         width: '100%',
         padding: '17px 0',
@@ -64,6 +65,7 @@ const OrderSummary = ({ subtotal, shipping, total }) => (
       }}>
         Cart
       </button>
+      </a>
     </div>
   );
   

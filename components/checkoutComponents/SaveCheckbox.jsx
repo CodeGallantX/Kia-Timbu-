@@ -5,7 +5,7 @@ const RegistrationCheckbox = () => {
   return (
     <div style={styles.container}>
       <input type="checkbox" name="Register" id="registerBox" />
-      <span style={styles.text}>Register for a free account, for better tracking</span>
+      <span style={styles.text}>Save this information for next time.</span>
     </div>
   );
 };
