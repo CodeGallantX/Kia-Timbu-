@@ -1,9 +1,9 @@
 // pages/index.js
 import React from 'react';
 import Head from 'next/head';
-import Navbar from '../components/Navbar';
-import HeroSection from '../components/HeroSection';
-import FeaturedList from '../components/FeaturedList';
+import Navbar from '@/components/NavbarHome';
+import HeroSection from '@/components/HeroSection';
+import FeaturedList from '@/components/FeaturedList';
 import Footer from '@/components/Footer';
 // import Link from 'next/link';// 
 

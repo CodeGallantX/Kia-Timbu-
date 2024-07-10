@@ -57,7 +57,7 @@ const Navbar = () => {
           </div>
         </div>
         <div style={inLineinLineStyles.navLinksContainer}>
-          <NavLink href="#">Cookware</NavLink>
+          <NavLink href="#"><a style={{textDecoration: 'none', color: '#fffffe', borderBottom: '2px solid white', paddingBottom: '2px' }}>Cookware</a></NavLink>
           <NavLink href="#">Knives</NavLink>
           <NavLink href="#">Contact us</NavLink>
         </div>

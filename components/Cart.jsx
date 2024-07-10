@@ -28,7 +28,7 @@ const Cart = () => {
         <div style={{ fontFamily: 'Lora', fontWeight: '700', fontSize: '32px', color: '#111111' }}>Cart Items</div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '4px', cursor: 'pointer', color: '#111111' }}>
           <CartIcon />
-          <span style={{ fontFamily: 'Montserrat', fontWeight: '500', fontSize: '18px', lineHeight: '30px',}}>
+          <span style={{ display: 'flex', fontFamily: 'Montserrat', fontWeight: '500', fontSize: '18px', lineHeight: '30px',}}>
             <Link href="/" style = {{textDecoration: 'none', fontFamily: 'Montserrat', color: '#111111'}}>Back to shopping</Link>
             <RightArrow/>
           </span>
@@ -63,9 +63,10 @@ const Cart = () => {
 };
 
 
+const styles = {
+  RightArrow {
+    transform: 'translateY(-20px)',
+  }
+}
 
 export default Cart;
-
-
-
-// https://www.figma.com/design/vST4s0InBnSD84euZNp28e/Stage-2-task?node-id=168-3107&t=xuq6K4QS8dmk2nTQ-4

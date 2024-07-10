@@ -8,19 +8,10 @@ const Footer = () => {
         <img src="https://ik.imagekit.io/mshcgnjju/CHEF%20-%20Timbu%20Cloud%20Store/logo.png" alt="logo" style={styles.logo} />
         <div style={styles.navLinks}>
           <div style={styles.navLink}>
-            <span style={styles.navLinkText}>Kitchen appliances</span>
-          </div>
-          <div style={styles.navLink}>
             <span style={styles.navLinkText}>Cookware</span>
           </div>
           <div style={styles.navLink}>
-            <span style={styles.navLinkText}>Bakeware</span>
-          </div>
-          <div style={styles.navLink}>
             <span style={styles.navLinkText}>Knives</span>
-          </div>
-          <div style={styles.navLink}>
-            <span style={styles.navLinkText}>Cutlery</span>
           </div>
           <div style={styles.navLink}>
             <span style={styles.navLinkText}>Contact us</span>
@@ -88,8 +79,9 @@ const styles = {
     alignItems: 'center',
   },
   navLinks: {
+    width: '450px',
     display: 'flex',
-    gap: '16px',
+    justifyContent: 'space-between',
   },
   navLink: {
     paddingTop: '16px',
