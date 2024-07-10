@@ -62,11 +62,4 @@ const Cart = () => {
   );
 };
 
-
-const styles = {
-  RightArrow {
-    transform: 'translateY(-20px)',
-  }
-}
-
 export default Cart;

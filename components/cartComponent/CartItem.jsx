@@ -29,24 +29,26 @@ const WishlistIcon = () => (
 
 // Define CartItem Component
 const CartItem = ({ imgSrc, title, price, colors }) => (
-    <div style={{ display: 'flex', gap: '10px', padding: '24px 16px', border: '0.5px solid #e0dffeff', borderRadius: '4px', backgroundColor: '#ffffff' }}>
+    <div style={{ display: 'flex', gap: '10px', padding: '24px 18px', border: '0.5px solid #e0dffeff', borderRadius: '4px', backgroundColor: '#ffffff' }}>
       <img src={imgSrc} alt="Product Image" style={{ width: '200px', height: '150px', borderRadius: '4px' }} />
       <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '12px' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <div style={{ fontFamily: 'Lora', fontWeight: '700', fontSize: '18px', color: '#111111' }}>{title}</div>
           <div style={{ fontFamily: 'Montserrat', fontWeight: '700', fontSize: '18px', color: '#111111' }}>{price}</div>
         </div>
-        <div style={{ fontFamily: 'Montserrat', fontWeight: '500', fontSize: '16px', color: '#111111', }}>Available colors</div>
-        <div style={{ display: 'flex', gap: '8px' }}>
-          {colors.map((color, index) => (
-            <div key={index} style={{ width: '16px', height: '16px', borderRadius: '50%', background: color }}></div>
-          ))}
+        <div style = {{display: 'flex', justifyContent: 'space-between', marginTop: '10px', marginBottom: '10px'}}>
+          <div style={{ fontFamily: 'Montserrat', fontWeight: '500', fontSize: '16px', color: '#111111', }}>Available colors</div>
+          <div style={{ display: 'flex', gap: '8px' }}>
+            {colors.map((color, index) => (
+              <div key={index} style={{ width: '16px', height: '16px', borderRadius: '50%', background: 'red' }}></div>
+            ))}
+          </div>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '32px' }}>
           <ActionItem icon={<DeleteIcon />} label="Delete" />
           <ActionItem icon={<WishlistIcon />} label="Move to wishlist" />
           <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
-            <span style={{ fontFamily: 'Montserrat', fontWeight: '500', fontSize: '14px', color: '#111111' }}>Quantity</span>
+            <span style={{ fontFamily: 'Montserrat', fontWeight: '500', fontSize: '14px', color: '#111111' }}> Quantity</span>
             <div style={{ border: '0.5px solid #555555', borderRadius: '2px', padding: '4px 8px', display: 'flex', alignItems: 'center', gap: '8px' }}>
               <CartIcon />
               <span style={{ fontFamily: 'Montserrat', fontWeight: '500', fontSize: '16px', color: '#555555' }}>1</span>
