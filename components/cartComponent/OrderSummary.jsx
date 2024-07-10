@@ -3,7 +3,7 @@ import React from "react";
 import SummaryItem from './SummaryItem'
 
 // Define OrderSummary Component
-const OrderSummary = ({ subtotal, shipping, total }) => (
+export const OrderSummary = ({ subtotal, shipping, total }) => (
     <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '24px' }}>
       <div style={{ fontFamily: 'Georgia', fontWeight: '700', fontSize: '24px', color: '#111111' }}>Order Summary</div>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
@@ -67,5 +67,3 @@ const OrderSummary = ({ subtotal, shipping, total }) => (
     </div>
   );
   
-
-export default OrderSummary;
