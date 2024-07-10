@@ -1,7 +1,8 @@
 "use client";
 import React from 'react';
-import { CartItem } from './cartComponent/CartItem';
-import { OrderSummary } from './cartComponent/OrderSummary';
+import CartItem from './cartComponent/CartItem';
+import OrderSummary from './cartComponent/OrderSummary';
+
 import Link from 'next/link'
 
 // Define the CartIcon Component
@@ -12,17 +13,9 @@ const CartIcon = () => (
   </svg>
 );
 
-// Define the DeleteIcon Component (placeholder)
-const DeleteIcon = () => (
+const RightArrow = () => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M ... your delete icon path data ..." fill="currentColor" />
-  </svg>
-);
-
-// Define the WishlistIcon Component (placeholder)
-const WishlistIcon = () => (
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M ... your wishlist icon path data ..." fill="currentColor" />
+    <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="#111111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
   </svg>
 );
 
@@ -37,6 +30,7 @@ const Cart = () => {
           <CartIcon />
           <span style={{ fontFamily: 'Montserrat', fontWeight: '500', fontSize: '18px', lineHeight: '30px',}}>
             <Link href="/" style = {{textDecoration: 'none', fontFamily: 'Montserrat', color: '#111111'}}>Back to shopping</Link>
+            <RightArrow/>
           </span>
         </div>
       </div>
