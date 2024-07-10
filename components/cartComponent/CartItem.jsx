@@ -22,13 +22,12 @@ const CartIcon = () => (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M ... your wishlist icon path data ..." fill="currentColor" />
     </svg>
-  );
-  
+  );  
 
 
 
 // Define CartItem Component
-const CartItem = ({ imgSrc, title, price, colors }) => (
+export const CartItem = ({ imgSrc, title, price, colors }) => (
     <div style={{ display: 'flex', gap: '10px', padding: '24px 16px', border: '0.5px solid #e0dffeff', borderRadius: '4px', backgroundColor: '#ffffff' }}>
       <img src={imgSrc} alt="Product Image" style={{ width: '200px', height: '150px', borderRadius: '4px' }} />
       <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '12px' }}>
@@ -56,5 +55,3 @@ const CartItem = ({ imgSrc, title, price, colors }) => (
       </div>
     </div>
   );
-  
-export default CartItem;
